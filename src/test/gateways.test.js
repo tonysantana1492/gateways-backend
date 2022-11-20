@@ -2,9 +2,7 @@ const request = require("supertest");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const db_url = process.env.DB_URL;
-const db_name = process.env.DB_NAME;
-const url = `${db_url}/${db_name}`;
+const url = process.env.DB_URL;
 const app = require("../app");
 let idGateway;
 
