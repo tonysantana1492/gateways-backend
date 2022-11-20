@@ -5,8 +5,7 @@ mongoose.Promise = global.Promise;
 
 const db = {};
 const db_url = process.env.DB_URL;
-const db_name = process.env.DB_NAME;
-const url = `${db_url}/${db_name}`;
+const url = db_url;
 
 db.mongoose = mongoose;
 db.url = url;
