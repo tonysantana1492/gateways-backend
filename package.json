@@ -1,0 +1,29 @@
+{
+  "name": "musala-gateway-backend-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
+    "build": "",
+    "test": "jest --testTimeout=5000 --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "Tony Santana López",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.2",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": ["/node_modules/"]
+  }
+}
