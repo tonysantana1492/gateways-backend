@@ -20,6 +20,11 @@ You need git to clone the repository. You can get git from
 
 A number of node.js tools is necessary to initialize and test the project. You must have node.js and its package manager (npm) installed. You can get them from  [http://nodejs.org/](http://nodejs.org/). The tools/modules used in this project are listed in package.json and include express and mongoose.
 
+You need create a .env file that contains the variable:
+
+    - PORT: Port to running your server.
+    - DB_URL: URI to connect to mongoDb database.
+
 #### MongoDB
 The project uses MongoDB as a database. If you are on Mac and using Homebrew package manager the installation is as simple as `brew install mongodb`.
 
